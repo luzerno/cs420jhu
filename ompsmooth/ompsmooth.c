@@ -87,7 +87,14 @@ void smoothSerialXY ( int dim, int halfwidth, float * m1, float * m2 )
 *-----------------------------------------------------------------------------*/
 void smoothParallelYXFor ( int dim, int halfwidth, float * m1, float * m2 )
 {
-  return;
+    int x, y;
+    #pragma omp parallel for
+    for (y = 0; y < dim; y++) {
+        for (x = 0; x < dim; x++) {
+            m2[y * dim + x] = evaluate(dim, halfwidth, x, y, m1);
+        }
+    }
+
 }
 
 /*------------------------------------------------------------------------------
@@ -96,7 +103,13 @@ void smoothParallelYXFor ( int dim, int halfwidth, float * m1, float * m2 )
 *-----------------------------------------------------------------------------*/
 void smoothParallelXYFor ( int dim, int halfwidth, float * m1, float * m2 )
 {
-  return;
+    int x, y;
+    #pragma omp parallel for
+    for (x = 0; x < dim; x++) {
+        for (y = 0; y < dim; y++) {
+            m2[y * dim + x] = evaluate(dim, halfwidth, x, y, m1);
+        }
+    }
 }
 
 
@@ -106,5 +119,11 @@ void smoothParallelXYFor ( int dim, int halfwidth, float * m1, float * m2 )
 *-----------------------------------------------------------------------------*/
 void smoothParallelCoalescedFor ( int dim, int halfwidth, float * m1, float * m2 )
 {
-  return;
+    int xy, x, y;
+    #pragma omp parallel for
+    for (xy = 0; xy < dim * dim; xy++) {
+        x = xy / dim;
+        y = xy % dim;
+        m2[xy] = evaluate(dim, halfwidth, x, y, m1);
+    }
 }
