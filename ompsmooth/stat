@@ -1,0 +1,247 @@
+Serial YX:
+Serial YX smoother took 10 seconds and 856102 microseconds
+Serial YX smoother took 10 seconds and 1145069 microseconds
+Serial YX smoother took 10 seconds and 1152820 microseconds
+Serial YX smoother took 10 seconds and 856031 microseconds
+Serial YX smoother took 10 seconds and 1143714 microseconds
+
+
+Serial XY:
+Serial XY smoother took 12 seconds and 5357 microseconds
+Serial XY smoother took 11 seconds and 1072083 microseconds
+Serial XY smoother took 11 seconds and 1094111 microseconds
+Serial XY smoother took 12 seconds and 57218 microseconds
+Serial XY smoother took 11 seconds and 829568 microseconds
+
+Parallel YX smoother:
+Threads=1
+Parallel YX smoother took 11 seconds and 41361 microseconds
+Parallel YX smoother took 11 seconds and 31641 microseconds
+Parallel YX smoother took 11 seconds and 36790 microseconds
+Parallel YX smoother took 11 seconds and 1950015 microseconds
+Parallel YX smoother took 11 seconds and 1967302 microseconds
+Thread=2
+Parallel YX smoother took 7 seconds and 1133696 microseconds
+Parallel YX smoother took 7 seconds and 1083199 microseconds
+Parallel YX smoother took 8 seconds and 1604347 microseconds
+Parallel YX smoother took 7 seconds and 1263069 microseconds
+Parallel YX smoother took 8 seconds and 1846 microseconds
+
+Thread=4
+Parallel YX smoother took 3 seconds and 270730 microseconds
+Parallel YX smoother took 3 seconds and 1689652 microseconds
+Parallel YX smoother took 3 seconds and 131477 microseconds
+Parallel YX smoother took 3 seconds and 377620 microseconds
+Parallel YX smoother took 3 seconds and 1735319 microseconds
+
+Thread=8
+Parallel YX smoother took 2 seconds and 558999 microseconds 
+Parallel YX smoother took 2 seconds and 1566580 microseconds 
+Parallel YX smoother took 2 seconds and 1416229 microseconds 
+Parallel YX smoother took 2 seconds and 1549565 microseconds 
+Parallel YX smoother took 2 seconds and 278867 microseconds
+
+Thread=16
+Parallel YX smoother took 2 seconds and 378587 microseconds 
+Parallel YX smoother took 2 seconds and 344785 microseconds 
+Parallel YX smoother took 2 seconds and 1745570 microseconds
+Parallel YX smoother took 2 seconds and 127507 microseconds
+Parallel YX smoother took 2 seconds and 283104 microseconds
+
+Thread=32
+Parallel YX smoother took 2 seconds and 316536 microseconds
+Parallel YX smoother took 2 seconds and 249398 microseconds
+Parallel YX smoother took 2 seconds and 314610 microseconds
+Parallel YX smoother took 2 seconds and 1910339 microseconds
+Parallel YX smoother took 2 seconds and 1722359 microseconds
+
+
+Parallel XY smoother:
+Thread=1
+Parallel XY smoother took 12 seconds and 1855657 microseconds
+Parallel XY smoother took 12 seconds and 57460 microseconds
+Parallel XY smoother took 12 seconds and 103939 microseconds
+Parallel XY smoother took 12 seconds and 188508 microseconds
+Parallel XY smoother took 12 seconds and 14737 microseconds
+
+Thread=2
+Parallel XY smoother took 8 seconds and 1173371 microseconds 
+Parallel XY smoother took 7 seconds and 1077091 microseconds
+Parallel XY smoother took 8 seconds and 701857 microseconds
+Parallel XY smoother took 8 seconds and 606872 microseconds
+Parallel XY smoother took 8 seconds and 686058 microseconds
+
+Thread=4
+Parallel XY smoother took 5 seconds and 427931 microseconds 
+Parallel XY smoother took 4 seconds and 124717 microseconds
+Parallel XY smoother took 4 seconds and 1265363 microseconds
+Parallel XY smoother took 6 seconds and 1623486 microseconds
+Parallel XY smoother took 5 seconds and 506407 microseconds
+
+Thread=8
+Parallel XY smoother took 4 seconds and 1091634 microseconds 
+Parallel XY smoother took 3 seconds and 375058 microseconds
+Parallel XY smoother took 4 seconds and 1167794 microseconds
+Parallel XY smoother took 6 seconds and 1193244 microseconds
+Parallel XY smoother took 5 seconds and 80805 microseconds
+
+Thread=16
+Parallel XY smoother took 4 seconds and 1170059 microseconds 
+Parallel XY smoother took 3 seconds and 1543051 microseconds
+Parallel XY smoother took 4 seconds and 517578 microseconds
+Parallel XY smoother took 6 seconds and 61047 microseconds
+Parallel XY smoother took 4 seconds and 1250635 microseconds
+
+Thread=32
+Parallel XY smoother took 4 seconds and 1324485 microseconds
+Parallel XY smoother took 3 seconds and 1486832 microseconds 
+Parallel XY smoother took 4 seconds and 451289 microseconds 
+Parallel XY smoother took 5 seconds and 805856 microseconds 
+Parallel XY smoother took 4 seconds and 845033 microseconds
+
+Parallel coalesce
+Thread=1
+Parallel coalesced smoother took 12 seconds and 242097 microseconds
+Parallel coalesced smoother took 12 seconds and 104181 microseconds
+Parallel coalesced smoother took 12 seconds and 222627 microseconds
+Parallel coalesced smoother took 12 seconds and 214450 microseconds
+Parallel coalesced smoother took 12 seconds and 128800 microseconds
+
+Thread=2
+Parallel coalesced smoother took 8 seconds and 575756 microseconds 
+Parallel coalesced smoother took 8 seconds and 508801 microseconds
+Parallel coalesced smoother took 8 seconds and 1445242 microseconds
+Parallel coalesced smoother took 8 seconds and 1419115 microseconds
+Parallel coalesced smoother took 8 seconds and 1412080 microseconds
+
+Thread=4
+Parallel coalesced smoother took 5 seconds and 1751246 microseconds
+Parallel coalesced smoother took 5 seconds and 192294 microseconds 
+Parallel coalesced smoother took 5 seconds and 129969 microseconds
+Parallel coalesced smoother took 5 seconds and 579117 microseconds
+Parallel coalesced smoother took 5 seconds and 256532 microseconds
+
+Thread=8
+Parallel coalesced smoother took 4 seconds and 1254756 microseconds 
+Parallel coalesced smoother took 4 seconds and 1234947 microseconds 
+Parallel coalesced smoother took 4 seconds and 733152 microseconds
+Parallel coalesced smoother took 5 seconds and 179640 microseconds
+Parallel coalesced smoother took 4 seconds and 1257176 microseconds
+
+Thread=16
+Parallel coalesced smoother took 4 seconds and 1250991 microseconds 
+Parallel coalesced smoother took 4 seconds and 742713 microseconds 
+Parallel coalesced smoother took 4 seconds and 1253652 microseconds
+Parallel coalesced smoother took 5 seconds and 186456 microseconds
+Parallel coalesced smoother took 4 seconds and 1169494 microseconds
+
+Thread=32 
+Parallel coalesced smoother took 4 seconds and 751028 microseconds 
+Parallel coalesced smoother took 4 seconds and 1249949 microseconds 
+Parallel coalesced smoother took 4 seconds and 1208067 microseconds 
+Parallel coalesced smoother took 5 seconds and 1838314 microseconds
+Parallel coalesced smoother took 4 seconds and 1209165 microseconds
+
+
+Parallel YX 2 Invocations:
+Thread=1 
+Parallel YX smoother (2 invocations) took 22 seconds and 74261 microseconds
+Parallel YX smoother (2 invocations) took 22 seconds and 67656 microseconds
+Parallel YX smoother (2 invocations) took 22 seconds and 78607 microseconds
+Parallel YX smoother (2 invocations) took 22 seconds and 78514 microseconds 
+Parallel YX smoother (2 invocations) took 22 seconds and 121290 microseconds
+
+Thread=2
+Parallel YX smoother (2 invocations) took 15 seconds and 1112406 microseconds
+Parallel YX smoother (2 invocations) took 15 seconds and 1901438 microseconds
+Parallel YX smoother (2 invocations) took 16 seconds and 237605 microseconds 
+Parallel YX smoother (2 invocations) took 16 seconds and 262939 microseconds 
+Parallel YX smoother (2 invocations) took 16 seconds and 382089 microseconds
+
+Thread=4
+Parallel YX smoother (2 invocations) took 6 seconds and 1021360 microseconds
+Parallel YX smoother (2 invocations) took 6 seconds and 1154708 microseconds
+Parallel YX smoother (2 invocations) took 6 seconds and 1091942 microseconds 
+Parallel YX smoother (2 invocations) took 6 seconds and 1064290 microseconds 
+Parallel YX smoother (2 invocations) took 6 seconds and 1119636 microseconds
+
+Thread=8
+Parallel YX smoother (2 invocations) took 5 seconds and 136304 microseconds
+Parallel YX smoother (2 invocations) took 5 seconds and 101659 microseconds
+Parallel YX smoother (2 invocations) took 5 seconds and 205983 microseconds
+Parallel YX smoother (2 invocations) took 4 seconds and 1186452 microseconds 
+Parallel YX smoother (2 invocations) took 5 seconds and 173827 microseconds
+
+Thread=16
+Parallel YX smoother (2 invocations) took 5 seconds and 91642 microseconds
+Parallel YX smoother (2 invocations) took 5 seconds and 42556 microseconds
+Parallel YX smoother (2 invocations) took 5 seconds and 79998 microseconds
+Parallel YX smoother (2 invocations) took 4 seconds and 1236231 microseconds
+Parallel YX smoother (2 invocations) took 5 seconds and 107469 microseconds
+
+Thread=32
+Parallel YX smoother (2 invocations) took 5 seconds and 11479 microseconds
+Parallel YX smoother (2 invocations) took 4 seconds and 1031226 microseconds
+Parallel YX smoother (2 invocations) took 4 seconds and 1025467 microseconds
+Parallel YX smoother (2 invocations) took 4 seconds and 591329 microseconds
+Parallel YX smoother (2 invocations) took 5 seconds and 112460 microseconds
+
+
+Parallel YX smoother merged:
+Thread=1 
+Parallel YX smoother (merged) took 21 seconds and 1009049 microseconds
+Parallel YX smoother (merged) took 21 seconds and 1021374 microseconds
+Parallel YX smoother (merged) took 22 seconds and 10430 microseconds
+Parallel YX smoother (merged) took 22 seconds and 10418 microseconds
+Parallel YX smoother (merged) took 22 seconds and 6046 microseconds
+
+Thread=2 
+Parallel YX smoother (merged) took 14 seconds and 1319553 microseconds
+Parallel YX smoother (merged) took 14 seconds and 951159 microseconds
+Parallel YX smoother (merged) took 14 seconds and 1000784 microseconds
+Parallel YX smoother (merged) took 14 seconds and 1166875 microseconds
+Parallel YX smoother (merged) took 14 seconds and 1052753 microseconds
+
+Thread=4 
+Parallel YX smoother (merged) took 7 seconds and 50443 microseconds
+Parallel YX smoother (merged) took 7 seconds and 211401 microseconds
+Parallel YX smoother (merged) took 7 seconds and 19304 microseconds
+Parallel YX smoother (merged) took 7 seconds and 1564206 microseconds
+Parallel YX smoother (merged) took 7 seconds and 95053 microseconds
+
+Thread=8 
+Parallel YX smoother (merged) took 4 seconds and 1140866 microseconds
+Parallel YX smoother (merged) took 4 seconds and 1099149 microseconds
+Parallel YX smoother (merged) took 4 seconds and 1227103 microseconds
+Parallel YX smoother (merged) took 4 seconds and 1105197 microseconds
+Parallel YX smoother (merged) took 4 seconds and 1162626 microseconds
+
+Thread=16 
+Parallel YX smoother (merged) took 4 seconds and 1203745 microseconds
+Parallel YX smoother (merged) took 4 seconds and 1255647 microseconds
+Parallel YX smoother (merged) took 4 seconds and 1346299 microseconds
+Parallel YX smoother (merged) took 4 seconds and 648892 microseconds
+Parallel YX smoother (merged) took 4 seconds and 639435 microseconds
+
+Thread=32 
+Parallel YX smoother (merged) took 4 seconds and 1340201 microseconds
+Parallel YX smoother (merged) took 4 seconds and 630483 microseconds
+Parallel YX smoother (merged) took 4 seconds and 1364078 microseconds
+Parallel YX smoother (merged) took 4 seconds and 1243635 microseconds
+Parallel YX smoother (merged) took 4 seconds and 1343863 microseconds
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
