@@ -1,3 +1,4 @@
+rm result
 echo "run 1"
 echo "run 1" >> result
 ./smooth >> result
