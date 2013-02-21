@@ -1,0 +1,63 @@
+width=1
+run 1
+Serial YX smoother took 4 seconds and 98647 microseconds
+Serial XY smoother took 4 seconds and 1372514 microseconds
+=========================
+run 2
+Serial YX smoother took 4 seconds and 93982 microseconds
+Serial XY smoother took 4 seconds and 623686 microseconds
+=========================
+run 3
+Serial YX smoother took 4 seconds and 98171 microseconds
+Serial XY smoother took 4 seconds and 1318300 microseconds
+=========================
+run 4
+Serial YX smoother took 4 seconds and 94790 microseconds
+Serial XY smoother took 4 seconds and 1351401 microseconds
+=========================
+run 5
+Serial YX smoother took 4 seconds and 95136 microseconds
+Serial XY smoother took 4 seconds and 661317 microseconds
+=========================
+width=2
+run 1
+Serial YX smoother took 4 seconds and 97409 microseconds
+Serial XY smoother took 4 seconds and 648868 microseconds
+=========================
+run 2
+Serial YX smoother took 4 seconds and 97109 microseconds
+Serial XY smoother took 4 seconds and 1362836 microseconds
+=========================
+run 3
+Serial YX smoother took 4 seconds and 97225 microseconds
+Serial XY smoother took 4 seconds and 1370601 microseconds
+=========================
+run 4
+Serial YX smoother took 4 seconds and 96000 microseconds
+Serial XY smoother took 4 seconds and 694504 microseconds
+=========================
+run 5
+Serial YX smoother took 4 seconds and 95382 microseconds
+Serial XY smoother took 4 seconds and 1349800 microseconds
+=========================
+width=3
+run 1
+Serial YX smoother took 4 seconds and 95546 microseconds
+Serial XY smoother took 4 seconds and 638193 microseconds
+=========================
+run 2
+Serial YX smoother took 4 seconds and 96292 microseconds
+Serial XY smoother took 4 seconds and 1360721 microseconds
+=========================
+run 3
+Serial YX smoother took 4 seconds and 98531 microseconds
+Serial XY smoother took 4 seconds and 1384850 microseconds
+=========================
+run 4
+Serial YX smoother took 4 seconds and 96290 microseconds
+Serial XY smoother took 4 seconds and 642266 microseconds
+=========================
+run 5
+Serial YX smoother took 4 seconds and 93817 microseconds
+Serial XY smoother took 4 seconds and 1318888 microseconds
+=========================
