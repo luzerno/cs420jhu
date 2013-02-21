@@ -29,8 +29,14 @@ int main()
   /* Create two input matrixes */
   float * m1in;
   float * m2out;
+  float * m3in;
+  float * m4out;
+
   m1in = malloc ( sizeof(float)*MAT_SIZE );
   m2out = malloc ( sizeof(float)*MAT_SIZE );
+  m3in = malloc (sizeof(float) *MAT_SIZE);
+  m4out = malloc (sizeof(float) *MAT_SIZE);
+
 
 
   /*  random data for the input */
@@ -41,11 +47,13 @@ int main()
   for (y=0; y<MAT_DIM; y++) {
     for (x=0; x<MAT_DIM; x++) {
       m1in[y*MAT_DIM+x] = (float)(x+y);
+      m3in[y*MAT_DIM+x] = (float)(x+y);
     }
   }      
 
   /* zero the output */
   memset ( m2out, 0, MAT_SIZE*sizeof(float) );
+  memset ( m4out, 0, MAT_SIZE*sizeof(float) );
 
 
   /*********  Serial Test **********/
@@ -159,6 +167,41 @@ int main()
     }
 
     printf ("Parallel coalesced smoother took %d seconds and %d microseconds\n",s,u );
+
+  /* get initial time */
+    gettimeofday ( &ta, NULL );
+
+    smoothParallelYXFor2Invocation ( MAT_DIM, KERNEL_HALFWIDTH, m1in, m2out, m3in, m4out );
+
+    /* get initial time */
+    gettimeofday ( &tb, NULL );
+
+    /* Work out the time */
+    s = tb.tv_sec - ta.tv_sec;
+    if ( ta.tv_usec < tb.tv_usec ) {
+      u = tb.tv_usec - ta.tv_usec;
+    } else {
+      u = 1000000 - tb.tv_usec + ta.tv_usec;
+      s = s-1;
+    }
+    printf ("Parallel YX smoother (2 invocations) took %d seconds and %d microseconds\n",s,u );
+/* get initial time */
+    gettimeofday ( &ta, NULL );
+
+    smoothParallelYXForMerge ( MAT_DIM, KERNEL_HALFWIDTH, m1in, m2out, m3in, m4out );
+
+    /* get initial time */
+    gettimeofday ( &tb, NULL );
+
+    /* Work out the time */
+    s = tb.tv_sec - ta.tv_sec;
+    if ( ta.tv_usec < tb.tv_usec ) {
+      u = tb.tv_usec - ta.tv_usec;
+    } else {
+      u = 1000000 - tb.tv_usec + ta.tv_usec;
+      s = s-1;
+    }
+    printf ("Parallel YX smoother (merged) took %d seconds and %d microseconds\n",s,u );
   }
 }
 

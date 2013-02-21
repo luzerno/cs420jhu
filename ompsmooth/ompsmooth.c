@@ -127,3 +127,30 @@ void smoothParallelCoalescedFor ( int dim, int halfwidth, float * m1, float * m2
         m2[xy] = evaluate(dim, halfwidth, x, y, m1);
     }
 }
+
+void smoothParallelYXFor2Invocation(int dim, int halfwidth, float *m1, float *m2, float *m3, float *m4) {
+    int x, y;
+    #pragma omp parallel for
+    for (y = 0; y < dim; y++) {
+        for (x = 0; x < dim; x++) {
+            m2[y * dim + x] = evaluate(dim, halfwidth, x, y, m1);
+        }
+    }
+    #pragma omp parallel for
+    for (y = 0; y < dim; y++) {
+        for (x = 0; x < dim; x++) {
+            m4[y * dim + x] = evaluate(dim, halfwidth, x, y, m3);
+        }
+    }
+}
+void smoothParallelYXForMerge(int dim, int halfwidth, float *m1, float *m2, float *m3, float *m4) {
+    int x, y;
+    #pragma omp parallel for
+    for (y = 0; y < dim; y++) {
+        for (x = 0; x < dim; x++) {
+            m2[y * dim + x] = evaluate(dim, halfwidth, x, y, m1);
+            m4[y * dim + x] = evaluate(dim, halfwidth, x, y, m3);
+        }
+    }
+}
+
