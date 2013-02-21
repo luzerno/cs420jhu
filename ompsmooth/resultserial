@@ -1,63 +1,62 @@
 width=1
 run 1
-Serial YX smoother took 4 seconds and 98647 microseconds
-Serial XY smoother took 4 seconds and 1372514 microseconds
+4	335578
+5	483118
 =========================
 run 2
-Serial YX smoother took 4 seconds and 93982 microseconds
-Serial XY smoother took 4 seconds and 623686 microseconds
+4	334000
+5	468580
 =========================
 run 3
-Serial YX smoother took 4 seconds and 98171 microseconds
-Serial XY smoother took 4 seconds and 1318300 microseconds
+4	336501
+5	477739
 =========================
 run 4
-Serial YX smoother took 4 seconds and 94790 microseconds
-Serial XY smoother took 4 seconds and 1351401 microseconds
+4	332487
+5	394162
 =========================
 run 5
-Serial YX smoother took 4 seconds and 95136 microseconds
-Serial XY smoother took 4 seconds and 661317 microseconds
+4	340347
+5	436494
 =========================
 width=2
 run 1
-Serial YX smoother took 4 seconds and 97409 microseconds
-Serial XY smoother took 4 seconds and 648868 microseconds
+10	846807
+11	920332
 =========================
 run 2
-Serial YX smoother took 4 seconds and 97109 microseconds
-Serial XY smoother took 4 seconds and 1362836 microseconds
+10	849067
+11	914460
 =========================
 run 3
-Serial YX smoother took 4 seconds and 97225 microseconds
-Serial XY smoother took 4 seconds and 1370601 microseconds
+10	844797
+11	982949
 =========================
 run 4
-Serial YX smoother took 4 seconds and 96000 microseconds
-Serial XY smoother took 4 seconds and 694504 microseconds
+10	836137
+12	15227
 =========================
 run 5
-Serial YX smoother took 4 seconds and 95382 microseconds
-Serial XY smoother took 4 seconds and 1349800 microseconds
+10	868903
+11	874123
 =========================
-width=3
 run 1
-Serial YX smoother took 4 seconds and 95546 microseconds
-Serial XY smoother took 4 seconds and 638193 microseconds
+20	502121
+21	710765
 =========================
 run 2
-Serial YX smoother took 4 seconds and 96292 microseconds
-Serial XY smoother took 4 seconds and 1360721 microseconds
+20	515246
+21	878873
 =========================
 run 3
-Serial YX smoother took 4 seconds and 98531 microseconds
-Serial XY smoother took 4 seconds and 1384850 microseconds
+20	521185
+21	769888
 =========================
 run 4
-Serial YX smoother took 4 seconds and 96290 microseconds
-Serial XY smoother took 4 seconds and 642266 microseconds
+20	524597
+22	83925
 =========================
 run 5
-Serial YX smoother took 4 seconds and 93817 microseconds
-Serial XY smoother took 4 seconds and 1318888 microseconds
+20	519503
+21	676650
 =========================
