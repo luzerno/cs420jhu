@@ -88,7 +88,7 @@ void smoothSerialXY ( int dim, int halfwidth, float * m1, float * m2 )
 void smoothParallelYXFor ( int dim, int halfwidth, float * m1, float * m2 )
 {
     int x, y;
-    #pragma omp parallel for
+    #pragma omp parallel for private (x, y)
     for (y = 0; y < dim; y++) {
         for (x = 0; x < dim; x++) {
             m2[y * dim + x] = evaluate(dim, halfwidth, x, y, m1);
@@ -104,7 +104,7 @@ void smoothParallelYXFor ( int dim, int halfwidth, float * m1, float * m2 )
 void smoothParallelXYFor ( int dim, int halfwidth, float * m1, float * m2 )
 {
     int x, y;
-    #pragma omp parallel for
+    #pragma omp parallel for private (x, y)
     for (x = 0; x < dim; x++) {
         for (y = 0; y < dim; y++) {
             m2[y * dim + x] = evaluate(dim, halfwidth, x, y, m1);
@@ -120,7 +120,7 @@ void smoothParallelXYFor ( int dim, int halfwidth, float * m1, float * m2 )
 void smoothParallelCoalescedFor ( int dim, int halfwidth, float * m1, float * m2 )
 {
     int xy, x, y;
-    #pragma omp parallel for
+    #pragma omp parallel for private (xy, x, y)
     for (xy = 0; xy < dim * dim; xy++) {
         x = xy / dim;
         y = xy % dim;
@@ -130,13 +130,13 @@ void smoothParallelCoalescedFor ( int dim, int halfwidth, float * m1, float * m2
 
 void smoothParallelYXFor2Invocation(int dim, int halfwidth, float *m1, float *m2, float *m3, float *m4) {
     int x, y;
-    #pragma omp parallel for
+    #pragma omp parallel for private (x, y)
     for (y = 0; y < dim; y++) {
         for (x = 0; x < dim; x++) {
             m2[y * dim + x] = evaluate(dim, halfwidth, x, y, m1);
         }
     }
-    #pragma omp parallel for
+    #pragma omp parallel for private (x, y)
     for (y = 0; y < dim; y++) {
         for (x = 0; x < dim; x++) {
             m4[y * dim + x] = evaluate(dim, halfwidth, x, y, m3);
@@ -145,7 +145,7 @@ void smoothParallelYXFor2Invocation(int dim, int halfwidth, float *m1, float *m2
 }
 void smoothParallelYXForMerge(int dim, int halfwidth, float *m1, float *m2, float *m3, float *m4) {
     int x, y;
-    #pragma omp parallel for
+    #pragma omp parallel for private (x, y)
     for (y = 0; y < dim; y++) {
         for (x = 0; x < dim; x++) {
             m2[y * dim + x] = evaluate(dim, halfwidth, x, y, m1);
