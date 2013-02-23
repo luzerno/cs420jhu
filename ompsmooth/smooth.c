@@ -102,106 +102,106 @@ int main()
 
   printf ("%d\t%d\n",s,u );
 
-/*   #<{(|********  Parallel Tests *********|)}># */
-/*   int threads; */
-/*   for (threads=1; threads <=32; threads*=2) */
-/*   { */
-/*  */
-/*     omp_set_num_threads(threads);  */
-/*     printf("Threads = %d\n", threads); */
-/*  */
-/*     #<{(| get initial time |)}># */
-/*     gettimeofday ( &ta, NULL ); */
-/*  */
-/*     smoothParallelYXFor ( MAT_DIM, KERNEL_HALFWIDTH, m1in, m2out ); */
-/*  */
-/*     #<{(| get initial time |)}># */
-/*     gettimeofday ( &tb, NULL ); */
-/*  */
-/*     #<{(| Work out the time |)}># */
-/*     s = tb.tv_sec - ta.tv_sec; */
-/*     if ( ta.tv_usec < tb.tv_usec ) { */
-/*       u = tb.tv_usec - ta.tv_usec; */
-/*     } else { */
-/*       u = 1000000 + tb.tv_usec - ta.tv_usec; */
-/*       s = s-1; */
-/*     } */
-/*  */
-/*     printf ("%d\t%d\n",s,u ); */
-/*  */
-/*     #<{(| get initial time |)}># */
-/*     gettimeofday ( &ta, NULL ); */
-/*  */
-/*     smoothParallelXYFor ( MAT_DIM, KERNEL_HALFWIDTH, m1in, m2out ); */
-/*  */
-/*     #<{(| get initial time |)}># */
-/*     gettimeofday ( &tb, NULL ); */
-/*  */
-/*     #<{(| Work out the time |)}># */
-/*     s = tb.tv_sec - ta.tv_sec; */
-/*     if ( ta.tv_usec < tb.tv_usec ) { */
-/*       u = tb.tv_usec - ta.tv_usec; */
-/*     } else { */
-/*       u = 1000000 + tb.tv_usec - ta.tv_usec; */
-/*       s = s-1; */
-/*     } */
-/*  */
-/*     printf ("%d\t%d\n",s,u ); */
-/*  */
-/*  */
-/*     #<{(| get initial time |)}># */
-/*     gettimeofday ( &ta, NULL ); */
-/*  */
-/*     smoothParallelCoalescedFor ( MAT_DIM, KERNEL_HALFWIDTH, m1in, m2out ); */
-/*  */
-/*     #<{(| get initial time |)}># */
-/*     gettimeofday ( &tb, NULL ); */
-/*  */
-/*     #<{(| Work out the time |)}># */
-/*     s = tb.tv_sec - ta.tv_sec; */
-/*     if ( ta.tv_usec < tb.tv_usec ) { */
-/*       u = tb.tv_usec - ta.tv_usec; */
-/*     } else { */
-/*       u = 1000000 + tb.tv_usec - ta.tv_usec; */
-/*       s = s-1; */
-/*     } */
-/*  */
-/*     printf ("%d\t%d\n",s,u ); */
-/*  */
-/*   #<{(| get initial time |)}># */
-/*     gettimeofday ( &ta, NULL ); */
-/*  */
-/*     smoothParallelYXFor2Invocation ( MAT_DIM, KERNEL_HALFWIDTH, m1in, m2out, m3in, m4out ); */
-/*  */
-/*     #<{(| get initial time |)}># */
-/*     gettimeofday ( &tb, NULL ); */
-/*  */
-/*     #<{(| Work out the time |)}># */
-/*     s = tb.tv_sec - ta.tv_sec; */
-/*     if ( ta.tv_usec < tb.tv_usec ) { */
-/*       u = tb.tv_usec - ta.tv_usec; */
-/*     } else { */
-/*       u = 1000000 + tb.tv_usec - ta.tv_usec; */
-/*       s = s-1; */
-/*     } */
-/*     printf ("%d\t%d\n",s,u ); */
-/* #<{(| get initial time |)}># */
-/*     gettimeofday ( &ta, NULL ); */
-/*  */
-/*     smoothParallelYXForMerge ( MAT_DIM, KERNEL_HALFWIDTH, m1in, m2out, m3in, m4out ); */
-/*  */
-/*     #<{(| get initial time |)}># */
-/*     gettimeofday ( &tb, NULL ); */
-/*  */
-/*     #<{(| Work out the time |)}># */
-/*     s = tb.tv_sec - ta.tv_sec; */
-/*     if ( ta.tv_usec < tb.tv_usec ) { */
-/*       u = tb.tv_usec - ta.tv_usec; */
-/*     } else { */
-/*       u = 1000000 + tb.tv_usec - ta.tv_usec; */
-/*       s = s-1; */
-/*     } */
-/*     printf ("%d\t%d\n",s,u ); */
-/*   } */
+  /*********  Parallel Tests **********/
+  int threads;
+  for (threads=1; threads <=32; threads*=2)
+  {
+
+    omp_set_num_threads(threads); 
+    printf("Threads = %d\n", threads);
+
+    /* get initial time */
+    gettimeofday ( &ta, NULL );
+
+    smoothParallelYXFor ( MAT_DIM, KERNEL_HALFWIDTH, m1in, m2out );
+
+    /* get initial time */
+    gettimeofday ( &tb, NULL );
+
+    /* Work out the time */
+    s = tb.tv_sec - ta.tv_sec;
+    if ( ta.tv_usec < tb.tv_usec ) {
+      u = tb.tv_usec - ta.tv_usec;
+    } else {
+      u = 1000000 + tb.tv_usec - ta.tv_usec;
+      s = s-1;
+    }
+
+    printf ("%d\t%d\n",s,u );
+
+    /* get initial time */
+    gettimeofday ( &ta, NULL );
+
+    smoothParallelXYFor ( MAT_DIM, KERNEL_HALFWIDTH, m1in, m2out );
+
+    /* get initial time */
+    gettimeofday ( &tb, NULL );
+
+    /* Work out the time */
+    s = tb.tv_sec - ta.tv_sec;
+    if ( ta.tv_usec < tb.tv_usec ) {
+      u = tb.tv_usec - ta.tv_usec;
+    } else {
+      u = 1000000 + tb.tv_usec - ta.tv_usec;
+      s = s-1;
+    }
+
+    printf ("%d\t%d\n",s,u );
+
+
+    /* get initial time */
+    gettimeofday ( &ta, NULL );
+
+    smoothParallelCoalescedFor ( MAT_DIM, KERNEL_HALFWIDTH, m1in, m2out );
+
+    /* get initial time */
+    gettimeofday ( &tb, NULL );
+
+    /* Work out the time */
+    s = tb.tv_sec - ta.tv_sec;
+    if ( ta.tv_usec < tb.tv_usec ) {
+      u = tb.tv_usec - ta.tv_usec;
+    } else {
+      u = 1000000 + tb.tv_usec - ta.tv_usec;
+      s = s-1;
+    }
+
+    printf ("%d\t%d\n",s,u );
+
+  /* get initial time */
+    gettimeofday ( &ta, NULL );
+
+    smoothParallelYXFor2Invocation ( MAT_DIM, KERNEL_HALFWIDTH, m1in, m2out, m3in, m4out );
+
+    /* get initial time */
+    gettimeofday ( &tb, NULL );
+
+    /* Work out the time */
+    s = tb.tv_sec - ta.tv_sec;
+    if ( ta.tv_usec < tb.tv_usec ) {
+      u = tb.tv_usec - ta.tv_usec;
+    } else {
+      u = 1000000 + tb.tv_usec - ta.tv_usec;
+      s = s-1;
+    }
+    printf ("%d\t%d\n",s,u );
+/* get initial time */
+    gettimeofday ( &ta, NULL );
+
+    smoothParallelYXForMerge ( MAT_DIM, KERNEL_HALFWIDTH, m1in, m2out, m3in, m4out );
+
+    /* get initial time */
+    gettimeofday ( &tb, NULL );
+
+    /* Work out the time */
+    s = tb.tv_sec - ta.tv_sec;
+    if ( ta.tv_usec < tb.tv_usec ) {
+      u = tb.tv_usec - ta.tv_usec;
+    } else {
+      u = 1000000 + tb.tv_usec - ta.tv_usec;
+      s = s-1;
+    }
+    printf ("%d\t%d\n",s,u );
+  }
 }
 
